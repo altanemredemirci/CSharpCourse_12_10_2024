@@ -148,7 +148,7 @@
             // CONSTANT - Sabit değişken: Tanımlandıktan sonra revizeye kapalı.
 
             const int sayi = 5; 
-            sayi = 19;
+            //sayi = 19;
         }               
     }
 }
