@@ -143,20 +143,20 @@ namespace _03_Operatorler
             #endregion
 
 
-            int a = 5;
-            int b = 6;
-            int c = 7;
-            string isim = "altan";
+            //int a = 5;
+            //int b = 6;
+            //int c = 7;
+            //string isim = "altan";
 
 
             // Console.WriteLine kullanım şekilleri 
             //1:
-            Console.WriteLine("A:" + a + " B:" + b);
+            //Console.WriteLine("A:" + a + " B:" + b);
             //2:Cw içinde , ile değerleri sıralayabilir.0'dan başlayarak 1'er 1'er artan numaralandırılır.
             // {} içerisine yazılan index numarasına göre değer taşınır.
-            Console.WriteLine("A:{0} B:{2}", a, b, isim);
+            //Console.WriteLine("A:{0} B:{2}", a, b, isim);
             //3:string tanım başına konulan '$' ifadesi string içerisinde C# komutları veya tanımları yazmayı sağlar.
-            Console.WriteLine($"A:{a} B:{b}"); 
+            //Console.WriteLine($"A:{a} B:{b}"); 
 
         }
     }
