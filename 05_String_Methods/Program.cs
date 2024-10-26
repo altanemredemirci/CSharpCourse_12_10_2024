@@ -71,8 +71,9 @@
             #region Remove
 
             //string isim = "ALTAN EMRE";
-            ////isim = isim.Remove(2);
+            //isim = isim.Remove(2);// Verilen indexten sonrasını siler.
             //string isim2 = isim.Remove(2,2); //Silmeye 2.indexden başla 2 karakter sil. 
+            //Console.WriteLine(isim);
             //Console.WriteLine(isim2);
 
             #endregion
@@ -87,9 +88,15 @@
 
             #region Insert
 
-            //string isim = "ALTAN EMRE";
-            //isim = isim.Insert(6,"URAS ");
-            //Console.WriteLine(isim);
+            string isim = "ALTAN EMRE";
+            //string isim2 = "URAS";
+
+            //Console.WriteLine(isim+isim2);
+
+
+
+            isim = isim.Insert(6,"URAS ");
+            Console.WriteLine(isim);
 
             #endregion
 

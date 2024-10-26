@@ -61,7 +61,7 @@
 
             #region BOXING
 
-            //decimal sayi = 1;
+            //decimal sayi = 18472389732894738;
             //int sayi2 = (int)sayi;
 
             //Console.WriteLine(sayi2);
