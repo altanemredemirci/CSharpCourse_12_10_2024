@@ -91,16 +91,11 @@ namespace _08_Bankamatik
                                     Console.WriteLine("Kart numarası 12 rakamdan oluşmalıdır.");
                                 }
 
-
-
                                 #region long olarak kart no alma ve kontrol
                                 //long kartNo = Convert.ToInt64(Console.ReadLine());
 
                                 //if(kartNo>99999999999 && kartNo < 1000000000000) { }
                                 #endregion
-
-
-
                             }
                             else
                             {
@@ -186,8 +181,106 @@ namespace _08_Bankamatik
                         {
                             Console.WriteLine("Eğitim Ödemeleri Arızalı!!");
                         }
-                        else if (anamenuSecim == "5") { }
-                        else if (anamenuSecim == "6") { }
+                        else if (anamenuSecim == "5") 
+                        {
+                            Console.WriteLine("1-Elektrik Faturası\n2-Su Faturası\n3-Doğalgaz Faturası\n4-İnternet Faturası\nSeçiminiz:");
+                            string faturaSecim = Console.ReadLine();
+
+                            if (faturaSecim == "1") 
+                            {
+                                Console.WriteLine("Fatura Tutarı:");
+                                double miktar = Convert.ToDouble(Console.ReadLine());
+
+                                if (bakiye >= miktar)
+                                {
+                                    Console.WriteLine("Faturanız Ödendi");
+                                    bakiye -= miktar;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Yetersiz Bakiye!");
+                                }
+
+                            }
+                            else if (faturaSecim == "2")
+                            {
+                                Console.WriteLine("Fatura Tutarı:");
+                                double miktar = Convert.ToDouble(Console.ReadLine());
+
+                                if (bakiye >= miktar)
+                                {
+                                    Console.WriteLine("Faturanız Ödendi");
+                                    bakiye -= miktar;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Yetersiz Bakiye!");
+                                }
+                            }
+                            else if (faturaSecim == "3")
+                            {
+                                Console.WriteLine("Fatura Tutarı:");
+                                double miktar = Convert.ToDouble(Console.ReadLine());
+
+                                if (bakiye >= miktar)
+                                {
+                                    Console.WriteLine("Faturanız Ödendi");
+                                    bakiye -= miktar;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Yetersiz Bakiye!");
+                                }
+                            }
+                            else if (faturaSecim == "4")
+                            {
+                                Console.WriteLine("Fatura Tutarı:");
+                                double miktar = Convert.ToDouble(Console.ReadLine());
+
+                                if (bakiye >= miktar)
+                                {
+                                    Console.WriteLine("Faturanız Ödendi");
+                                    bakiye -= miktar;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Yetersiz Bakiye!");
+                                }
+                            }                           
+                            else
+                            {
+                                Console.WriteLine("Hatalı Tuşlama!!");
+                            }
+                        }
+                        else if (anamenuSecim == "6") 
+                        {
+                            Console.WriteLine("Eski şifreniz:");
+                            string oldPass = Console.ReadLine();
+
+                            if (oldPass == sfr)
+                            {
+                                Console.WriteLine("Yeni şifre:");
+                                string newPass = Console.ReadLine();
+                                Console.WriteLine("Tekrar Yeni şifre");
+                                string newPass2 = Console.ReadLine();
+                                if (newPass == newPass2)
+                                {
+                                    sfr = newPass;
+                                    Console.WriteLine("Şifreniz Değiştirildi.");
+                                    Thread.Sleep(2000);
+                                    Console.Clear();
+                                    goto KARTLI;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Şifreler Uyuşmuyor!");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Mevcut Şifreyi Yanlış Girdiniz!!");
+                            }
+                        }
                         else
                         {
                             Console.WriteLine("Hatalı Tuşlama!!");
@@ -202,8 +295,6 @@ namespace _08_Bankamatik
                         }                           
                         else
                             Environment.Exit(0); //Program Biter.
-
-
                     }
                     else
                     {
