@@ -106,6 +106,24 @@
 
             #endregion
 
+            #region SELİN
+            int i = 200;
+            while (i > 0)
+            {
+
+                if (i % 3 != 0)
+                {
+                    i--;
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                    i--;
+                }
+            }
+            #endregion
+
 
             // Kullanıcıdan 0 girilene kadar pozitif sayılar girmesi istensin. 0 girilene kadar girilen pozitif sayılar toplansın ve ortalaması hesaplansın.
             // Kullanıcı 0 girdiğinde döngü bitsin ve toplam,ortalama ekrana yazdırılsın.
