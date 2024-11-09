@@ -155,6 +155,63 @@
            yaşı 58 ve üstü ise maaşının 10 katı kadar ikramiye alarak emekli edilecek, yaş 58'ın altında ise çalıştığı gün sayısına göre eğer 3600 ve üstü ise maaşının 11 katı kadar ikramiye alarak emekli edilecek, 3600 altında ise emekli edilmeyecek bilgisi kullanıcıya gösterilecek
           ==> cinsiyet bilgisi switch-case ile sorgulanacak
            */
+            DON:
+            Console.WriteLine("Cinsiyetiniz(E/K):");
+            string cins = Console.ReadLine().ToUpper();
+
+            Console.WriteLine("Yaş:");
+            int yas = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Maaş:");
+            double maas = Convert.ToDouble(Console.ReadLine());
+
+            if (cins == "E") 
+            {               
+                if (yas >= 60) 
+                {
+                    Console.WriteLine("İkramiye:"+(maas*10));
+                }
+                else if (yas > 18)  // 60>yas>18
+                {
+                    Console.WriteLine("Prim Günü:");
+                    int primGunu = Convert.ToInt32(Console.ReadLine());
+
+                    if (primGunu >= 6000) 
+                    {
+                        Console.WriteLine("İkramiye:" + (maas * 11));
+                    }
+                    else 
+                    {
+                        Console.WriteLine("Emeklilik hayal çalışmaya devam!!");
+                    }
+                }
+            }
+            else if (cins == "K") 
+            {
+                if (yas >= 58)
+                {
+                    Console.WriteLine("İkramiye:" + (maas * 10));
+                }
+                else if (yas > 18)  // 60>yas>18
+                {
+                    Console.WriteLine("Prim Günü:");
+                    int primGunu = Convert.ToInt32(Console.ReadLine());
+
+                    if (primGunu >= 3600)
+                    {
+                        Console.WriteLine("İkramiye:" + (maas * 11));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Emeklilik hayal çalışmaya devam!!");
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Cinsiyet bilgisi hatalı!!");
+                goto DON;
+            }
 
         }
     }
