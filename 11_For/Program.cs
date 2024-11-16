@@ -29,8 +29,6 @@
             //}
             #endregion
 
-
-
             #region Kullanıcının girmiş olduğu 5 pozitif sayıyı toplayınız.
 
             //int toplam = 0;
@@ -110,6 +108,7 @@
             */
 
             #endregion
+
             #region Kullanıcıdan alınan bir sayının faktörüyeli hesaplayan for döngüsünü yazınız.
             // 5 => 5*4*3*2*1 => 120
 
@@ -122,7 +121,6 @@
             //}
             //Console.WriteLine("Faktöriyel:"+sonuc);
             #endregion
-
 
             #region 1-500 arasındaki sayıların içinden 13 katlarının sayısını ve toplamlarını hesaplayınız
 
@@ -140,6 +138,60 @@
             }
             Console.WriteLine("Toplam:"+toplam);
             Console.WriteLine("Adet:"+adet);
+
+            #endregion
+
+
+            #region  PASCAL ÜÇGENİ
+            /*
+            
+            *
+            **
+            ***
+            ****
+            *****
+            ******
+            
+             */
+            #endregion
+
+            #region KARE
+            /*
+             
+            *********
+            *       *
+            *       *
+            *       *
+            *       *
+            *       *
+            *********
+               
+             */
+
+            #endregion
+
+            #region Yılbaşı Ağacı
+            /*
+             
+                    *
+                   ***
+                  *****
+                 *******
+                *********
+               ***********
+              
+             */
+            #endregion
+
+            #region Çarpım Tablosu
+
+            /*
+             
+            1*1=1  2*1=2 3*1=3 ...
+            1*2=2
+            1*3=3
+            
+             */
 
             #endregion
 
