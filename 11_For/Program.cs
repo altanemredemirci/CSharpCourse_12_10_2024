@@ -124,20 +124,20 @@
 
             #region 1-500 arasındaki sayıların içinden 13 katlarının sayısını ve toplamlarını hesaplayınız
 
-            int adet = 0;
-            int toplam = 0;
-            for (int i = 1; i < 500; i++)
-            {
-                if (i % 13 == 0)
-                {
-                    Console.WriteLine(i);
-                    toplam += i; // toplam = toplam+i;
-                    adet++;
-                }
-                   
-            }
-            Console.WriteLine("Toplam:"+toplam);
-            Console.WriteLine("Adet:"+adet);
+            //int adet = 0;
+            //int toplam = 0;
+            //for (int i = 1; i < 500; i++)
+            //{
+            //    if (i % 13 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //        toplam += i; // toplam = toplam+i;
+            //        adet++;
+            //    }
+
+            //}
+            //Console.WriteLine("Toplam:"+toplam);
+            //Console.WriteLine("Adet:"+adet);
 
             #endregion
 
@@ -153,6 +153,16 @@
             ******
             
              */
+
+            //for (int i = 1; i < 7; i++)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write("*"); //çalıştıktan sonra imleç aynı satırda kalır.
+            //    }
+            //    Console.WriteLine();
+            //}
+
             #endregion
 
             #region KARE
@@ -168,6 +178,24 @@
                
              */
 
+
+            //for (int i = 1; i < 8; i++)
+            //{
+            //    if(i==1 || i == 7)
+            //    {
+            //        Console.WriteLine("***********");
+            //    }
+            //    else
+            //    {
+            //        Console.Write("*");
+            //        for (int j = 0; j < 9; j++)
+            //        {
+            //            Console.Write(" ");
+            //        }
+            //        Console.WriteLine("*");
+            //    }
+            //}
+
             #endregion
 
             #region Yılbaşı Ağacı
@@ -181,7 +209,53 @@
                ***********
               
              */
+
+            //int bosluk = 5;
+
+            //for (int i = 1; i < 12; i+=2)
+            //{
+            //    for (int j = bosluk; j >0; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int k = i; k >0; k--)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //    bosluk -= 1;
+            //}
+
+
+            #region SELİN
+
+            //for (int a = 0; a < 21; a++)
+            //{
+            //    for (int b = 0; b <= 20 - a; b++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int c = 0; c <= 2 * a; c++)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //    Console.WriteLine();
+            //}
+
+            //for (int i = 0; i < 8; i++)
+            //{
+            //    Console.WriteLine("                  ******                    ");
+            //}
+
             #endregion
+
+
+            #endregion
+
+
+
+
 
             #region Çarpım Tablosu
 
@@ -192,6 +266,15 @@
             1*3=3
             
              */
+
+            //for (int i = 1; i < 11; i++)
+            //{
+            //    for (int j = 1; j < 11; j++)
+            //    {
+            //        Console.Write($"{j}x{i}={i*j}\t");
+            //    }
+            //    Console.WriteLine();
+            //}
 
             #endregion
 
