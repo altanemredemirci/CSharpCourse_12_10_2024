@@ -375,20 +375,20 @@ namespace _14_Arrays
             #endregion
 
             #region Selin
-            double[] fiyatlar = new double[4];
+            //double[] fiyatlar = new double[4];
 
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine($"{i + 1}.ürünün fiyatını girin:");
-                double fiyat = Convert.ToDouble(Console.ReadLine());
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    Console.WriteLine($"{i + 1}.ürünün fiyatını girin:");
+            //    double fiyat = Convert.ToDouble(Console.ReadLine());
 
-                if (fiyat > 1200)
-                {
-                    fiyat = fiyat * 68 / 100;
-                }
-                fiyatlar[i] = fiyat;
-                Console.WriteLine($"{i + 1}.ürünün fiyatı: {fiyat}");
-            }
+            //    if (fiyat > 1200)
+            //    {
+            //        fiyat = fiyat * 68 / 100;
+            //    }
+            //    fiyatlar[i] = fiyat;
+            //    Console.WriteLine($"{i + 1}.ürünün fiyatı: {fiyat}");
+            //}
             #endregion
             #endregion
 
