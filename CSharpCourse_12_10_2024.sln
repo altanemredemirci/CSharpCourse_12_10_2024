@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_Try_Catch", "13_Try_Catc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_Arrays", "14_Arrays\14_Arrays.csproj", "{B828FB62-782D-4721-A364-09A06EE2BA43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_Methods", "15_Methods\15_Methods.csproj", "{402AE451-CDBB-4960-8021-6430DDB53302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15_Methods", "15_Methods\15_Methods.csproj", "{402AE451-CDBB-4960-8021-6430DDB53302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_Methods_1", "15_Methods_1\15_Methods_1.csproj", "{EAF42E58-8B2C-4817-9683-A609C48D6A56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15_Methods_1", "15_Methods_1\15_Methods_1.csproj", "{EAF42E58-8B2C-4817-9683-A609C48D6A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Arrays_Otomat", "14_Arrays_Otomat\14_Arrays_Otomat.csproj", "{57C27507-1FC9-4FD1-A1B7-AD3194A9EA61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{EAF42E58-8B2C-4817-9683-A609C48D6A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAF42E58-8B2C-4817-9683-A609C48D6A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAF42E58-8B2C-4817-9683-A609C48D6A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C27507-1FC9-4FD1-A1B7-AD3194A9EA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C27507-1FC9-4FD1-A1B7-AD3194A9EA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C27507-1FC9-4FD1-A1B7-AD3194A9EA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C27507-1FC9-4FD1-A1B7-AD3194A9EA61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
