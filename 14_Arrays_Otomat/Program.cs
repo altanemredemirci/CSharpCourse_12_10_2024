@@ -2,25 +2,23 @@
 {
     internal class Program
     {
+        static string[] products = { "Kola", "Fanta", "Çikolata" };
+        static double[] prices = { 50, 45.50, 14 };
+
         static void Main(string[] args)
         {
             int balance = 0;
             double totalPrice = 0;
             string[] orders = new string[1];
 
-            string[] products = { "Kola", "Fanta", "Çikolata" };
-            double[] prices = { 50, 45.50, 14 };
+            
 
             while (true)
             {
-                for (int i = 0; i < products.Length; i++) //0,1,2
-                {
-                    Console.WriteLine($"{i}-{products[i]}:{prices[i]}"); // $ ifadesi "(string)" içinde kod yazacağınız belirtir.
-                }
+                List();
 
                 Console.WriteLine("Ürün Seçiniz:");
                 int index = Convert.ToInt32(Console.ReadLine());
-
 
                 if (index == -100)
                 {
@@ -64,10 +62,7 @@
                     }
                     else if (secim == 2) //Ürün Sil
                     {
-                        for (int i = 0; i < products.Length; i++) //0,1,2
-                        {
-                            Console.WriteLine($"{i}-{products[i]}:{prices[i]}"); 
-                        }
+                        List();
 
                         Console.WriteLine("Silinecek Ürün Seçiniz:");
                         int silinecekIndex = Convert.ToInt32(Console.ReadLine());
@@ -84,10 +79,7 @@
                     }
                     else if (secim == 3) //Ürün Güncelle
                     {
-                        for (int i = 0; i < products.Length; i++) //0,1,2
-                        {
-                            Console.WriteLine($"{i}-{products[i]}:{prices[i]}");
-                        }
+                        List();
 
                         Console.WriteLine("Ürün Seçiniz:");
                         int guncellenecekIndex = Convert.ToInt32(Console.ReadLine());
@@ -109,10 +101,7 @@
                     }
                     else if (secim == 4)
                     {
-                        for (int i = 0; i < products.Length; i++) //0,1,2
-                        {
-                            Console.WriteLine($"{i}-{products[i]}:{prices[i]}");
-                        }
+                       List();
                     }
                     else if (secim == 5) 
                     {
@@ -183,6 +172,14 @@
 
             }
 
+        }
+
+        static void List()
+        {
+            for (int i = 0; i < products.Length; i++) //0,1,2
+            {
+                Console.WriteLine($"{i}-{products[i]}:{prices[i]}"); // $ ifadesi "(string)" içinde kod yazacağınız belirtir.
+            }
         }
     }
 }
