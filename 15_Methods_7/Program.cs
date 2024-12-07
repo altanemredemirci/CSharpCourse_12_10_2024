@@ -12,9 +12,75 @@
             //kullanıcının bütün hataları kontrol altına alınmalı
 
 
-            //Bankamatik 
+            SayiUret();
+             
 
 
+        }
+
+        static void SayiUret()
+        {
+            Console.WriteLine("Başlangıç değeri:");
+            int basla = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Bitiş değeri:");
+            int bitis = Convert.ToInt32(Console.ReadLine());
+
+            if (basla > bitis)
+            {
+                int temp = basla;
+                basla = bitis;
+                bitis = temp;
+            }
+
+            Random r = new Random();
+
+            int[] sayilar = new int[10];
+            for (int i = 0; i < sayilar.Length; i++)
+            {
+                sayilar[i] = r.Next(basla, bitis);
+            }
+
+            DiziYazdir(sayilar);
+
+            Console.WriteLine("En Büyük:"+EnBuyukDeger(sayilar));
+            Console.WriteLine("En Küçük:"+EnKucukDeger(sayilar));
+
+        }
+
+        static void DiziYazdir(int[] array)
+        {
+            foreach (var item in array)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        static int EnBuyukDeger(int[] array)
+        {
+            int sayi = array[0];
+            foreach (var item in array)
+            {
+                if (item > sayi)
+                {
+                    sayi = item;
+                }
+            }
+
+            return sayi;
+        }
+
+        static int EnKucukDeger(int[] array)
+        {
+            int sayi = array[0];
+            foreach (var item in array)
+            {
+                if (item < sayi)
+                {
+                    sayi = item;
+                }
+            }
+
+            return sayi;
         }
     }
 }
