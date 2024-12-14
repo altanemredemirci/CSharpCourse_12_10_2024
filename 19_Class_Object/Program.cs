@@ -12,9 +12,6 @@
             o.Soyad = "Demirci";
             o.TC = "123";
 
-
-
-
         }
     }
     class Ogrenci
