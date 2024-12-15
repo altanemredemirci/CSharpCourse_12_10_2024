@@ -162,9 +162,7 @@ namespace _16_ArrayList_ManavOtomasyonu
                 {
                     break;
                 }
-            }
-          
-
+            }  
         }
 
         static string MeyveSebzeSecim()
