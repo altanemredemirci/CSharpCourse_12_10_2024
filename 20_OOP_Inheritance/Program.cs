@@ -10,7 +10,6 @@
 
             *** Her class TEK BİR CLASS'tan miras(inheritance) alabilir.
             *
-
              */
 
             //ŞİRKET:MUH,IK,IT,PAZ
@@ -20,7 +19,8 @@
             //IK: Id,Ad,Soyad,TC,SGKNo,Maas,PersonelSayisi
 
             IK ik = new IK();
-            
+
+            ik.Yaz();
         }
     }
 
@@ -32,20 +32,28 @@
         public string TC { get; set; }
         public string SGKNo { get; set; }
         public double Maas { get; set; }
+
+        public void Yaz()
+        {
+
+        }
     }
 
     class IK:Personel
     {
         public int PersonelSayisi { get; set; }
     }
+
     class IT:Personel
     {
         public int ProgramSayisi { get; set; }
     }
+
     class PAZ:Personel
     {
         public int TeklifSayisi { get; set; }
     }
+
     class MUH: Personel
     {
         public int HesapSayisi { get; set; }

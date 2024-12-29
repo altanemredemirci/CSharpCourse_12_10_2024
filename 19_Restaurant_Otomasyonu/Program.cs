@@ -1,5 +1,4 @@
-﻿using System.Collections;
-
+﻿
 namespace _19_Restaurant_Otomasyonu
 {
     internal class Program

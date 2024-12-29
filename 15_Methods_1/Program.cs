@@ -19,9 +19,9 @@
 
             BankaMusteri.MusteriKaydet();
 
-            BankaMusteri.Yaz();
+            //BankaMusteri.Yaz();
 
-            BankaMusteri.MusteriKaydet
+            //BankaMusteri.MusteriKaydet
 
         }
     }
