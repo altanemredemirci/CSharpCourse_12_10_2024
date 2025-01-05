@@ -12,6 +12,7 @@
 
             Daire daire = new Daire(10);
             Console.WriteLine(daire.Alan());
+
         }
     }
     public class Sekil
@@ -68,4 +69,4 @@
     }
 }
 
-// ABSTRACT - INTERFACE
+
